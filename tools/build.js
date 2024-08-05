@@ -78,7 +78,7 @@ const sFirefox = 'firefox';
 
 function patchManifest(str, suffix) {
   const mj = JSON.parse(str);
-  delete mj.key;
+  // delete mj.key;
   if (suffix === sChrome) {
     delete mj.browser_specific_settings;
   } else if (suffix === sChromeBeta) {
